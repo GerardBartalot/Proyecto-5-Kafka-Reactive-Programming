@@ -35,11 +35,11 @@ spring:
                         compressionType: gzip
                         configuration:
                           max.request.size: 10000000
-          binder:
-            autoAddPartitions: true
-            autoCreateTopics: true
-            requiredAcks: -1
-            minPartitionCount: 3
-            replicationFactor: 1
-            serdeError: logAndContinue
-            brokers: localhost:9092
+                    binder:
+                      autoAddPartitions: true
+                      autoCreateTopics: true
+                      requiredAcks: -1
+                      minPartitionCount: 3
+                      replicationFactor: 1
+                      serdeError: logAndContinue
+                      brokers: localhost:9092
